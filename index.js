@@ -30,11 +30,11 @@ function viewCart() {
   var msg = 'In your cart, you have ';
   
   for (let i = 0; i < cart.length - 1; i++) {
-    msg += `${cart[i].itemName} at ${cart[i].itemPrice}, `
+    msg += `${cart[i].itemName} at $${cart[i].itemPrice}, `
   }
   
   var lastItem = cart.length - 1;
-  msg += `and ${cart[lastItem].itemName} at ${cart[lastItem].itemPrice}.` 
+  msg += `and ${cart[lastItem].itemName} at $${cart[lastItem].itemPrice}.` 
   
   return msg;
 }
