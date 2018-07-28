@@ -22,7 +22,14 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  // write your code here
+  
+  var msg = 'In your cart, you have ';
+  
+  for (let i = 0; i < cart.length - 1; i++) {
+    msg += `  `
+  }
+  
+  
 }
 
 function total() {
