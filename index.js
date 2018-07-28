@@ -38,13 +38,13 @@ function viewCart() {
   
   // Conjunction only needed if cart contains more than one item 
   if (cart.length > 1) {
-    conjuntion = 'and'
+    conjuntion = 'and '
   }
   
   // Add the last item 
   var lastItem = cart.length - 1;
   
-  msg += `${conjunction} ${cart[lastItem].itemName} at $${cart[lastItem].itemPrice}.` 
+  msg += `${conjunction}${cart[lastItem].itemName} at $${cart[lastItem].itemPrice}.` 
   
   return msg;
 }
