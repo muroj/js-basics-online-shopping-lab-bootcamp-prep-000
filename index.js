@@ -38,7 +38,7 @@ function viewCart() {
   
   // Conjunction only needed if cart contains more than one item 
   if (cart.length > 1) {
-    conjuntion = 'and '
+    conjunction = 'and '
   }
   
   // Add the last item 
