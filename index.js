@@ -33,7 +33,8 @@ function viewCart() {
     msg += `${cart[i].itemName} at ${cart[i].itemPrice}, `
   }
   
-  msg += `and ${cart[cart.length-1].itemName} at ${cart[cart.length-1].itemPrice}.` 
+  var lastItem = cart.length - 1;
+  msg += `and ${cart[lastItem].itemName} at ${cart[lastItem].itemPrice}.` 
   
   return msg;
 }
