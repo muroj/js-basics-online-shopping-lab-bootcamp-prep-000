@@ -10,7 +10,11 @@ function setCart(c) {
 }
 
 function addToCart(item) {
-  var cartItem = { itemName : item, "ite"};
+  var cartItem = { 
+    itemName : item, 
+    itemPrice: Math.Random
+    
+  };
   
   cart.push(cartItem);
 }
