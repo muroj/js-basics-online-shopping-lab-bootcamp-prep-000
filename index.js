@@ -29,14 +29,22 @@ function viewCart() {
   
   var msg = 'In your cart, you have ';
   
+  // Only add length-1 items to prevent appending extra comma ','
   for (let i = 0; i < cart.length - 1; i++) {
     msg += `${cart[i].itemName} at $${cart[i].itemPrice}, `
   }
   
+   var conjunction = '';
+  
+  // Conjunction only needed if cart contains more than one item 
+  if (cart.length > 1) {
+    conjuntion = 'and'
+  }
+  
+  // Add the last item 
   var lastItem = cart.length - 1;
   
-  
-  msg += `${cart[lastItem].itemName} at $${cart[lastItem].itemPrice}.` 
+  msg += `${conjunction} ${cart[lastItem].itemName} at $${cart[lastItem].itemPrice}.` 
   
   return msg;
 }
