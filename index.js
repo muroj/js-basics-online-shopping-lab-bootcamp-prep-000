@@ -34,7 +34,9 @@ function viewCart() {
   }
   
   var lastItem = cart.length - 1;
-  msg += `and ${cart[lastItem].itemName} at $${cart[lastItem].itemPrice}.` 
+  
+  
+  msg += `${cart[lastItem].itemName} at $${cart[lastItem].itemPrice}.` 
   
   return msg;
 }
